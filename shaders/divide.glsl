@@ -15,3 +15,5 @@ void main( void ) {
 	float h = uv.y;
 	
 	gl_FragColor = vec4(h);
+	
+}
