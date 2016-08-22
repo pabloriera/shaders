@@ -37,7 +37,7 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 
 ## ejemplos
 [Teoría del color](http://glslsandbox.com/e#34013.0)
-![Teoría del color](https://github.com/pabloriera/elecciones/blob/gh-pages/nubes.png?raw=true)
+![Teoría del color](https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true)
 
 
 [cuadricula noise](http://glslsandbox.com/e#32420.2)
