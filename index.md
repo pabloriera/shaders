@@ -20,7 +20,7 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 ## Ejemplos para empezar
 
 [Teoría del color](http://glslsandbox.com/e#34013.0)
-![Teoría del color](https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true)
+![Teoría del color](https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true =100x)
 <img src="https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true" alt="Drawing" style="width: 100px;"/>
 
 [Tablero Ajedrez](http://glslsandbox.com/e#34775.0)
