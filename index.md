@@ -6,8 +6,12 @@
 Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. CUPO LIMITADO. + 8 años. 
 
 ## Recursos web para jugar con Shaders
-[glsl sandbox](http://glslsandbox.com/)
-[shadertoyr](https://www.shadertoy.com)
+
+Página sencilla
+[GLSL Sandbox](http://glslsandbox.com/)
+
+Página no tan sencilla 
+[Shadertoy](https://www.shadertoy.com)
 
 ## ¿que es un shader?
 
@@ -30,8 +34,6 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 [Tablero Ajedrez Rotado](http://glslsandbox.com/e#34775.1)
 
 <img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"/>
-
-
 
 
 # Taller "no tan básico" de código creativo con Shaders II. 
