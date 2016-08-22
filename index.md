@@ -5,25 +5,32 @@
 
 Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. CUPO LIMITADO. + 8 años. 
 
-## recursos
+## Recursos web para jugar con Shaders
 [glsl sandbox](http://glslsandbox.com/)
-[shoders school](https://github.com/stackgl/shader-school)
 [shadertoyr](https://www.shadertoy.com)
 
-¿que es un shader?
+## ¿que es un shader?
 
-[el libro de los shaders](http://patriciogonzalezvivo.com/2015/thebookofshaders/?lan=es)
+[El libro de los shaders](http://patriciogonzalezvivo.com/2015/thebookofshaders/00/?lan=es)
 
+## Galeria
 
+[Patricio Gonzalez Vivo](http://patriciogonzalezvivo.github.io/glslGallery)
 
+## Ejemplos para empezar
 
-http://glslsandbox.com/e#31898.0 voronoi
+[Teoría del color](http://glslsandbox.com/e#34013.0)
 
-http://glslsandbox.com/e#31676.0 color fractal
-http://glslsandbox.com/e#32891.1 ball orbits
-http://glslsandbox.com/e#33112.8 generative trails
+<img src="https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true" width="100px"/>
 
-http://glslsandbox.com/e#34708.3 mandelbrot
+[Tablero Ajedrez](http://glslsandbox.com/e#34775.0)
+
+<img src="https://github.com/pabloriera/shaders/blob/master/images/tablero.png?raw=true" width="100px"/>
+
+[Tablero Ajedrez Rotado](http://glslsandbox.com/e#34775.1)
+
+<img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"/>
+
 
 
 
@@ -35,13 +42,19 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 
 
 
-## ejemplos
-[Teoría del color](http://glslsandbox.com/e#34013.0)
-![Teoría del color](https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true)
+## Ejemplos Varios
 
 
-[cuadricula noise](http://glslsandbox.com/e#32420.2)
-[oblique](http://glslsandbox.com/e#31765.4)
+http://glslsandbox.com/e#31898.0 voronoi
+
+http://glslsandbox.com/e#31676.0 color fractal
+http://glslsandbox.com/e#32891.1 ball orbits
+http://glslsandbox.com/e#33112.8 generative trails
+
+http://glslsandbox.com/e#34708.3 mandelbrot
+
+[Cuadricula ruidosa](http://glslsandbox.com/e#32420.2)
+[Cuadricula rotada](http://glslsandbox.com/e#31765.4)
 
 [fuego](http://glslsandbox.com/e#31528.0)
 [backbuffer](http://glslsandbox.com/e#21541.3)
