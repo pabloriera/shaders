@@ -5,23 +5,38 @@
 
 Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. CUPO LIMITADO. + 8 años. 
 
-## Recursos web para jugar con Shaders
+# Taller "no tan básico" de código creativo con Shaders II. 
+### 17:30 hs. Taller. Aula - taller. 
 
-Página sencilla
+En este taller los programadores, artistas y docentes Pablo Riera y Diego Alberti te van a presentar a shaders y al lenguaje de sombreado GLSL que sirven para transformar y crear efectos especiales. Básicamente, vas a procesar el color de todos los pixeles de la pantalla. ¡OK! Después de esta descripción, tenés dos opciones: o Googleás todo esto… o ¡venís al taller! Así que… ¡Te esperamos! 
+Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. CUPO LIMITADO. + 15 años. 
+
+# Recursos web para jugar con Shaders
+
+Hay varias páginas que ofrecen editores y visualizadores de Shaders
+
+Página sencilla, directo al grano
 [GLSL Sandbox](http://glslsandbox.com/)
 
-Página no tan sencilla 
+[Editor del libro de shaders](http://editor.thebookofshaders.com/)
+
+Editor con la posibilidad de manejar valores con perillas
+[Interactive Shader Format](https://www.interactiveshaderformat.com)
+
+Página no tan sencilla, con muchas opciones, pero con variaciones en el lenguaje utilizado
 [Shadertoy](https://www.shadertoy.com)
 
-https://www.interactiveshaderformat.com/sketches/184
+Página simple, con ejemplo para utilizar estructuras 3D.
+[SHDR](http://shdr.bkcore.com/)
 
-http://shdr.bkcore.com/
 
-## ¿que es un shader?
+## ¿Qué es un shader?
+
+El libro de los shaders es un proyecto del artista Patricio Gonzalez Vivo. Ahí se pueden encontrar las explicaciones básicas sobre qué son los Shaders y muchos ejemplos para ir aprendiendo
 
 [El libro de los shaders](http://patriciogonzalezvivo.com/2015/thebookofshaders/00/?lan=es)
 
-## Galeria
+## Galerias
 
 [Patricio Gonzalez Vivo](http://patriciogonzalezvivo.github.io/glslGallery)
 
@@ -39,29 +54,14 @@ http://shdr.bkcore.com/
 
 <img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"/>
 
-
-
-# Taller "no tan básico" de código creativo con Shaders II. 
-### 17:30 hs. Taller. Aula - taller. 
-
-En este taller los programadores, artistas y docentes Pablo Riera y Diego Alberti te van a presentar a shaders y al lenguaje de sombreado GLSL que sirven para transformar y crear efectos especiales. Básicamente, vas a procesar el color de todos los pixeles de la pantalla. ¡OK! Después de esta descripción, tenés dos opciones: o Googleás todo esto… o ¡venís al taller! Así que… ¡Te esperamos! 
-Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. CUPO LIMITADO. + 15 años. 
-
-
-
 ## Ejemplos Varios
 
-
-http://glslsandbox.com/e#31898.0 voronoi
-
-http://glslsandbox.com/e#31676.0 color fractal
-http://glslsandbox.com/e#32891.1 ball orbits
-http://glslsandbox.com/e#33112.8 generative trails
-
-http://glslsandbox.com/e#34708.3 mandelbrot
-
+[Efecto voronoi](http://glslsandbox.com/e#31898.0)
+[Fractal con colores](http://glslsandbox.com/e#31676.0)
+[Órbitas](http://glslsandbox.com/e#32891.1)
+[Trazos generativos](http://glslsandbox.com/e#33112.8)
+[Mandelbrot](http://glslsandbox.com/e#34708.3)
 [Cuadricula ruidosa](http://glslsandbox.com/e#32420.2)
 [Cuadricula rotada](http://glslsandbox.com/e#31765.4)
-
-[fuego](http://glslsandbox.com/e#31528.0)
-[backbuffer](http://glslsandbox.com/e#21541.3)
+[Fuego](http://glslsandbox.com/e#31528.0)
+[Juego de la vida](http://glslsandbox.com/e#21541.3)
