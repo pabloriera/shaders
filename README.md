@@ -13,6 +13,10 @@ Página sencilla
 Página no tan sencilla 
 [Shadertoy](https://www.shadertoy.com)
 
+https://www.interactiveshaderformat.com/sketches/184
+
+http://shdr.bkcore.com/
+
 ## ¿que es un shader?
 
 [El libro de los shaders](http://patriciogonzalezvivo.com/2015/thebookofshaders/00/?lan=es)
@@ -34,6 +38,7 @@ Página no tan sencilla
 [Tablero Ajedrez Rotado](http://glslsandbox.com/e#34775.1)
 
 <img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"/>
+
 
 
 # Taller "no tan básico" de código creativo con Shaders II. 
