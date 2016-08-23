@@ -57,11 +57,19 @@ El libro de los shaders es un proyecto del artista Patricio Gonzalez Vivo. Ahí 
 ## Ejemplos Varios
 
 [Efecto voronoi](http://glslsandbox.com/e#31898.0)
+
 [Fractal con colores](http://glslsandbox.com/e#31676.0)
+
 [Órbitas](http://glslsandbox.com/e#32891.1)
+
 [Trazos generativos](http://glslsandbox.com/e#33112.8)
+
 [Mandelbrot](http://glslsandbox.com/e#34708.3)
+
 [Cuadricula ruidosa](http://glslsandbox.com/e#32420.2)
+
 [Cuadricula rotada](http://glslsandbox.com/e#31765.4)
+
 [Fuego](http://glslsandbox.com/e#31528.0)
+
 [Juego de la vida](http://glslsandbox.com/e#21541.3)
