@@ -46,7 +46,8 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 <p>Página sencilla, directo al grano
 <a href="http://glslsandbox.com/">GLSL Sandbox</a></p>
 
-<p><a href="http://editor.thebookofshaders.com/">Editor del libro de shaders</a></p>
+<p>Editor del libro de shaders, permite incorporar imágenes
+<a href="http://editor.thebookofshaders.com/">Editor del libro de shaders</a></p>
 
 <p>Editor con la posibilidad de manejar valores con perillas
 <a href="https://www.interactiveshaderformat.com">Interactive Shader Format</a></p>
@@ -54,7 +55,7 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 <p>Página no tan sencilla, con muchas opciones, pero con variaciones en el lenguaje utilizado
 <a href="https://www.shadertoy.com">Shadertoy</a></p>
 
-<p>Página simple, con ejemplo para utilizar estructuras 3D.
+<p>Página simple, con ejemplo para utilizar estructuras 3D y Vertex Shaders.
 <a href="http://shdr.bkcore.com/">SHDR</a></p>
 
 <h2>
@@ -72,7 +73,8 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 <h2>
 <a id="ejemplos-para-empezar" class="anchor" href="#ejemplos-para-empezar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ejemplos para empezar</h2>
 
-<p><a href="http://glslsandbox.com/e#34013.0">Teoría del color</a></p>
+<p><a href="http://editor.thebookofshaders.com/?log=160826175515">Teoría del color</a>
+<a href="http://glslsandbox.com/e#34861.0">Teoría del color</a></p>
 
 <p><img src="https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true" width="100px"></p>
 
@@ -86,6 +88,8 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 
 <h2>
 <a id="ejemplos-varios" class="anchor" href="#ejemplos-varios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ejemplos Varios</h2>
+
+<p><a href="http://glslsandbox.com/e#34862.0">Estela para dibujar</a></p>
 
 <p><a href="http://glslsandbox.com/e#31898.0">Efecto voronoi</a></p>
 
@@ -104,6 +108,37 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 <p><a href="http://glslsandbox.com/e#31528.0">Fuego</a></p>
 
 <p><a href="http://glslsandbox.com/e#21541.3">Juego de la vida</a></p>
+
+<p><a href="http://glslsandbox.com/e#34866.9">Caminata al azar</a></p>
+
+<h2>
+<a id="funciones-útiles" class="anchor" href="#funciones-%C3%BAtiles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Funciones útiles</h2>
+
+<p>Círculo</p>
+
+<div class="highlight highlight-source-c"><pre><span class="pl-k">float</span> <span class="pl-en">circle</span>(vec2 p,<span class="pl-k">float</span> x,<span class="pl-k">float</span> y,<span class="pl-k">float</span> rad)
+{
+    <span class="pl-k">return</span> <span class="pl-c1">1.0</span>-<span class="pl-c1">smoothstep</span>(rad*<span class="pl-c1">0.8</span>,rad*<span class="pl-c1">1.01</span>,<span class="pl-c1">distance</span>(p,<span class="pl-c1">vec2</span>(x,y)));  
+}</pre></div>
+
+<p>Numeros aleatorios en dos dimensiones</p>
+
+<div class="highlight highlight-source-c"><pre><span class="pl-k">float</span> <span class="pl-en">random2D</span>(vec2 st) { 
+    <span class="pl-k">return</span> <span class="pl-c1">fract</span>(<span class="pl-c1">sin</span>(<span class="pl-c1">dot</span>(st.<span class="pl-smi">xy</span>, <span class="pl-c1">vec2</span>(<span class="pl-c1">12.9898</span>,<span class="pl-c1">78.233</span>)))* <span class="pl-c1">43758.5453123</span>);
+}</pre></div>
+
+<p>Numeros aleatorios en dos dimensiones con semilla asignable</p>
+
+<div class="highlight highlight-source-c"><pre><span class="pl-k">float</span> <span class="pl-en">random2D</span>(vec2 st,vec2 seed) { 
+    <span class="pl-k">return</span> <span class="pl-c1">fract</span>(<span class="pl-c1">sin</span>(<span class="pl-c1">dot</span>(st.<span class="pl-smi">xy</span>, seed))* <span class="pl-c1">43758.5453123</span>);
+}</pre></div>
+
+<p>Numeros aleatorios 1D</p>
+
+<div class="highlight highlight-source-c"><pre><span class="pl-k">float</span> <span class="pl-en">random1D</span>(<span class="pl-k">float</span> x)
+{
+    <span class="pl-k">return</span> (<span class="pl-c1">0.5</span>-<span class="pl-c1">fract</span>(<span class="pl-c1">sin</span>(x)*<span class="pl-c1">124321.0354</span>));
+}</pre></div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/pabloriera/shaders">Shaders</a> is maintained by <a href="https://github.com/pabloriera">pabloriera</a>.</span>
