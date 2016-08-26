@@ -83,9 +83,9 @@ El libro de los shaders es un proyecto del artista Patricio Gonzalez Vivo. Ahí 
 
 Círculo
 ``` C
-float circle(vec2 p,float x,float y,float rad)
+float circle(vec2 p, vec2 center, float rad)
 {
-	return 1.0-smoothstep(rad*0.8,rad*1.01,distance(p,vec2(x,y)));	
+	return 1.0-smoothstep(rad*0.8,rad*1.01,distance(p, center));	
 }
 ```
 
@@ -104,7 +104,7 @@ float segment(vec2 v, vec2 w, vec2 p,float size) {
   float t = max(0., min(1.0, dot(p - v, w - v) / l2));
   vec2 projection = v + t * (w - v);  // Projection falls on the segment
   float d = distance(p, projection);
-  return smoothstep(0.6*size,1.4*size,d);
+  return 1.0-smoothstep(0.6*size,1.4*size,d);
 }
 ```
 
