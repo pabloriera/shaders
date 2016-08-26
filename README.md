@@ -18,6 +18,7 @@ Hay varias páginas que ofrecen editores y visualizadores de Shaders
 Página sencilla, directo al grano
 [GLSL Sandbox](http://glslsandbox.com/)
 
+Editor del libro de shaders, permite incorporar imágenes
 [Editor del libro de shaders](http://editor.thebookofshaders.com/)
 
 Editor con la posibilidad de manejar valores con perillas
@@ -26,9 +27,8 @@ Editor con la posibilidad de manejar valores con perillas
 Página no tan sencilla, con muchas opciones, pero con variaciones en el lenguaje utilizado
 [Shadertoy](https://www.shadertoy.com)
 
-Página simple, con ejemplo para utilizar estructuras 3D.
+Página simple, con ejemplo para utilizar estructuras 3D y Vertex Shaders.
 [SHDR](http://shdr.bkcore.com/)
-
 
 ## ¿Qué es un shader?
 
@@ -42,7 +42,8 @@ El libro de los shaders es un proyecto del artista Patricio Gonzalez Vivo. Ahí 
 
 ## Ejemplos para empezar
 
-[Teoría del color](http://glslsandbox.com/e#34013.0)
+[Teoría del color](http://editor.thebookofshaders.com/?log=160826175515)
+[Teoría del color](http://glslsandbox.com/e#34861.0)
 
 <img src="https://github.com/pabloriera/shaders/blob/master/images/color.png?raw=true" width="100px"/>
 
@@ -55,6 +56,8 @@ El libro de los shaders es un proyecto del artista Patricio Gonzalez Vivo. Ahí 
 <img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"/>
 
 ## Ejemplos Varios
+
+[Estela para dibujar](http://glslsandbox.com/e#34862.0)
 
 [Efecto voronoi](http://glslsandbox.com/e#31898.0)
 
@@ -73,3 +76,37 @@ El libro de los shaders es un proyecto del artista Patricio Gonzalez Vivo. Ahí 
 [Fuego](http://glslsandbox.com/e#31528.0)
 
 [Juego de la vida](http://glslsandbox.com/e#21541.3)
+
+[Caminata al azar](http://glslsandbox.com/e#34866.9)
+
+## Funciones útiles
+
+Círculo
+``` C
+float circle(vec2 p,float x,float y,float rad)
+{
+	return 1.0-smoothstep(rad*0.8,rad*1.01,distance(p,vec2(x,y)));	
+}
+```
+
+Numeros aleatorios en dos dimensiones
+``` C
+float random2D(vec2 st) { 
+    return fract(sin(dot(st.xy, vec2(12.9898,78.233)))* 43758.5453123);
+}
+```
+
+Numeros aleatorios en dos dimensiones con semilla asignable
+``` C
+float random2D(vec2 st,vec2 seed) { 
+    return fract(sin(dot(st.xy, seed))* 43758.5453123);
+}
+```
+
+Numeros aleatorios 1D
+``` C
+float random1D(float x)
+{
+	return (0.5-fract(sin(x)*124321.0354));
+}
+```
