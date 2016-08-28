@@ -86,6 +86,10 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 
 <p><img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"></p>
 
+<p><a href="http://thebookofshaders.com/edit.php?log=160828035914">Refresco Lineal</a></p>
+
+<p><a href="http://player.thebookofshaders.com/?log=160828050212">Refresco Paralelo</a></p>
+
 <h2>
 <a id="ejemplos-varios" class="anchor" href="#ejemplos-varios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ejemplos Varios</h2>
 
@@ -116,9 +120,26 @@ Las entradas se retiran a partir de las 13 horas en el hall de entrada del C3. C
 
 <p>Círculo</p>
 
-<div class="highlight highlight-source-c"><pre><span class="pl-k">float</span> <span class="pl-en">circle</span>(vec2 p,<span class="pl-k">float</span> x,<span class="pl-k">float</span> y,<span class="pl-k">float</span> rad)
+<div class="highlight highlight-source-c"><pre><span class="pl-k">float</span> <span class="pl-en">circle</span>(vec2 p, vec2 center, <span class="pl-k">float</span> rad)
 {
-    <span class="pl-k">return</span> <span class="pl-c1">1.0</span>-<span class="pl-c1">smoothstep</span>(rad*<span class="pl-c1">0.8</span>,rad*<span class="pl-c1">1.01</span>,<span class="pl-c1">distance</span>(p,<span class="pl-c1">vec2</span>(x,y)));  
+    <span class="pl-k">return</span> <span class="pl-c1">1.0</span>-<span class="pl-c1">smoothstep</span>(rad*<span class="pl-c1">0.8</span>,rad*<span class="pl-c1">1.01</span>,<span class="pl-c1">distance</span>(p, center));    
+}</pre></div>
+
+<p>Segmento</p>
+
+<div class="highlight highlight-source-c"><pre><span class="pl-k">float</span> <span class="pl-en">segment</span>(vec2 v, vec2 w, vec2 p,<span class="pl-k">float</span> size) {
+  <span class="pl-c">// Return minimum distance between line segment vw and point p</span>
+  <span class="pl-k">float</span> l2 = <span class="pl-c1">pow</span>(<span class="pl-c1">distance</span>(v,w),<span class="pl-c1">2</span>.);  <span class="pl-c">// i.e. |w-v|^2 -  avoid a sqrt</span>
+
+  <span class="pl-k">if</span> (l2 == <span class="pl-c1">0.0</span>) <span class="pl-k">return</span> <span class="pl-c1">distance</span>(p, v);   <span class="pl-c">// v == w case</span>
+  <span class="pl-c">// Consider the line extending the segment, parameterized as v + t (w - v).</span>
+  <span class="pl-c">// We find projection of point p onto the line. </span>
+  <span class="pl-c">// It falls where t = [(p-v) . (w-v)] / |w-v|^2</span>
+  <span class="pl-c">// We clamp t from [0,1] to handle points outside the segment vw.</span>
+  <span class="pl-k">float</span> t = <span class="pl-c1">max</span>(<span class="pl-c1">0</span>., <span class="pl-c1">min</span>(<span class="pl-c1">1.0</span>, <span class="pl-c1">dot</span>(p - v, w - v) / l2));
+  vec2 projection = v + t * (w - v);  <span class="pl-c">// Projection falls on the segment</span>
+  <span class="pl-k">float</span> d = <span class="pl-c1">distance</span>(p, projection);
+  <span class="pl-k">return</span> <span class="pl-c1">1.0</span>-<span class="pl-c1">smoothstep</span>(<span class="pl-c1">0.6</span>*size,<span class="pl-c1">1.4</span>*size,d);
 }</pre></div>
 
 <p>Numeros aleatorios en dos dimensiones</p>
