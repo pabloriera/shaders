@@ -35,6 +35,7 @@ Página no tan sencilla
 
 <img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"/>
 
+[Barrido lineal](http://thebookofshaders.com/edit.php?log=160828035914)
 
 # Taller "no tan básico" de código creativo con Shaders II. 
 ### 17:30 hs. Taller. Aula - taller. 
