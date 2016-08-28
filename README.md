@@ -55,7 +55,9 @@ El libro de los shaders es un proyecto del artista Patricio Gonzalez Vivo. Ahí 
 
 <img src="https://github.com/pabloriera/shaders/blob/master/images/tablero2.png?raw=true" width="100px"/>
 
-[Barrido Lineal](http://thebookofshaders.com/edit.php?log=160828035914)
+[Refresco Lineal](http://thebookofshaders.com/edit.php?log=160828035914)
+
+[Refresco Paralelo](http://player.thebookofshaders.com/?log=160828050212)
 
 ## Ejemplos Varios
 
